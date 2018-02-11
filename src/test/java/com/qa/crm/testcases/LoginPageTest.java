@@ -29,10 +29,7 @@ public class LoginPageTest extends TestBase{
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@Test
-	public void loginPageTest() {
-		//System.out.println("")
-	}
+	
 	
 	
 	@AfterMethod
