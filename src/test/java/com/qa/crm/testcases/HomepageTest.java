@@ -15,9 +15,6 @@ public class HomepageTest {
 		System.out.println("public void test2()");
 	}
 	
-	@Test
-	public void test3() {
-		System.out.println("public void test3()");		
-	}
+	
 
 }
