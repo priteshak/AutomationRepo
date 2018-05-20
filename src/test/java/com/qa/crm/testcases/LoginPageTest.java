@@ -1,6 +1,7 @@
 package com.qa.crm.testcases;
 
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,8 +25,21 @@ public class LoginPageTest extends TestBase{
 		initialization();
 		loginPage= new LoginPage();
 	}
+	
+	
 	@Test
-	public void loginPage() throws InterruptedException {
+	public void titleTest() {
+		String expected = loginPage.loginTitle();
+		Assert.assertEquals(expected, "Free CRM software in the cloud powers sales and customer service","Title doesnt matched with actual");
+	}
+	
+	@Test
+	public void crmImageTest() {
+		loginPage.crmImage();
+	}
+	
+	@Test
+	public void loginPageTest() throws InterruptedException {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	

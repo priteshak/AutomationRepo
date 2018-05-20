@@ -33,22 +33,29 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//div[@class='intercom-borderless-dismiss-button']")
 	WebElement popUpDismiss;
 	
+	@FindBy(xpath="//img[@class='img-responsive' and @alt='free crm logo']")
+	WebElement crmImag;
+	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	public String loginTitle() {
+		return driver.getTitle();
+		}
+	
+	public boolean crmImage() {
+		return crmImag.isDisplayed();
 	}
 	
 	public void login(String un, String pwd) throws InterruptedException {
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		Actions action=new Actions(driver);
-		action.moveToElement(popUp).build().perform();
-		Thread.sleep(2000);
-		popUpDismiss.click();
 		Thread.sleep(2000);
 		submitButton.click();
 		Thread.sleep(3000);
-		
-		//return new HomePage();
 	}
 
 	
