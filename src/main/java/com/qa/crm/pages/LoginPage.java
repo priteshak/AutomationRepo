@@ -33,9 +33,6 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//div[@class='intercom-borderless-dismiss-button']")
 	WebElement popUpDismiss;
 	
-	//@FindBy(xpath="//div[@class='intercom-borderless-dismiss-button']")
-	//WebElement popUpDismiss;
-	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
