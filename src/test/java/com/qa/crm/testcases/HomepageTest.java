@@ -1,32 +1,40 @@
 package com.qa.crm.testcases;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HomepageTest {
-	
-	@Test
-	public void test1() {
-		System.out.println("public void test1()");
-	}
-	
-	@Test
-	public void test2() {
+import com.qa.crm.base.TestBase;
+import com.qa.crm.pages.HomePage;
+import com.qa.crm.pages.LoginPage;
 
-		System.out.println("public void test2()");
+public class HomepageTest extends TestBase {
+	LoginPage loginPage;
+	HomePage homePage;
+	
+	public HomepageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() throws InterruptedException {
+		initialization();
+		loginPage = new LoginPage();
+		homePage = new HomePage();
+		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test
-	public void test3() {
-
-		System.out.println("public void test3()");
+	public void verifyLoginUserNameTest() {
+		String actualUserName = homePage.verifyLoginUser();
+		Assert.assertEquals(actualUserName, "Pritesh Khambekar", "wrong Username");
+		
 	}
 	
-	@Test
-	public void test4() {
-
-		System.out.println("public void test4()");
+	@AfterMethod
+	public void tearDown() {
+		driver.close();
 	}
-	
-	
 
 }
