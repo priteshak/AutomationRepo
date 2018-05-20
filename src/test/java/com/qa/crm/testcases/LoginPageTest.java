@@ -25,7 +25,7 @@ public class LoginPageTest extends TestBase{
 		loginPage= new LoginPage();
 	}
 	@Test
-	public void loginPage() {
+	public void loginPage() throws InterruptedException {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
@@ -34,7 +34,7 @@ public class LoginPageTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }

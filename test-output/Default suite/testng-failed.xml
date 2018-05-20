@@ -7,6 +7,7 @@
         <methods>
           <include name="loginPage"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.crm.testcases.LoginPageTest -->
     </classes>
