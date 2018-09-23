@@ -2,15 +2,17 @@ package com.qa.crm.testcases;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.crm.base.TestBase;
+import com.qa.crm.listners.Screenshot;
 import com.qa.crm.pages.ContactPage;
 import com.qa.crm.pages.HomePage;
 import com.qa.crm.pages.LoginPage;
 
 
-
+@Listeners(Screenshot.class)
 public class ContactTest extends TestBase {
 
 	HomePage homePage;

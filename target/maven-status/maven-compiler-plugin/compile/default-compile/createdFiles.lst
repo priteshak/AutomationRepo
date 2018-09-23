@@ -1,0 +1,6 @@
+com\qa\crm\util\Frame.class
+com\qa\crm\base\TestBase.class
+com\qa\crm\pages\ContactPage.class
+com\qa\crm\pages\HomePage.class
+com\qa\crm\testdata\Xls_Reader1.class
+com\qa\crm\pages\LoginPage.class
