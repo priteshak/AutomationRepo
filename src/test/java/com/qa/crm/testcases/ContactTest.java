@@ -33,10 +33,10 @@ public class ContactTest extends TestBase {
 	    homePage.newContact(); 
 	}
 	
-	/*@Test(priority=1)
+	@Test(priority=1)
 	public void openContactLinkTest() {
 		homePage.newContact();
-		}*/
+		}
 	
 	@Test
 	public void newContactFormFillTest() {
