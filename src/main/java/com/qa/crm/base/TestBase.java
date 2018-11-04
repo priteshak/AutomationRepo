@@ -59,7 +59,7 @@ public class TestBase {
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(src, new File("E:\\FreeCRMTest\\src\\main\\"
-					+ "java\\screenshots"+failedTestCase+"_"+".png"));
+					+ "java\\screenshots"+failedTestCase+"_"+".jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

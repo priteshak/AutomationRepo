@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 24 13:47:05 IST 2018</td>
+<td>Started on:</td><td>Sun Sep 23 14:16:51 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>63 seconds (63704 ms)</td>
+<tr><td>Total time:</td><td>139 seconds (139999 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.crm.testcases.ContactTest.newContactFormFillTest()'><b>newContactFormFillTest</b><br>Test class: com.qa.crm.testcases.ContactTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problem: 
-	ddepartment cannot be resolved
-
-	at com.qa.crm.pages.ContactPage.newContactForm(ContactPage.java:43)
-	at com.qa.crm.testcases.ContactTest.newContactFormFillTest(ContactTest.java:44)
+<td title='com.qa.crm.testcases.HomepageTest.verifyLoginUserNameTest()'><b>verifyLoginUserNameTest</b><br>Test class: com.qa.crm.testcases.HomepageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td1[contains(text(),&apos;User: Pritesh Khambekar&apos;)]&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-6KKEUNJ&apos;, ip: &apos;172.20.10.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Pritesh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 05e0befa5e18ae15027e398ef4430336
+*** Element info: {Using=xpath, value=//td1[contains(text(),&apos;User: Pritesh Khambekar&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.qa.crm.pages.HomePage.verifyLoginUser(HomePage.java:28)
+	at com.qa.crm.testcases.HomepageTest.verifyLoginUserNameTest(HomepageTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,12 +133,39 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace362827515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace362827515'><pre>java.lang.Error: Unresolved compilation problem: 
-	ddepartment cannot be resolved
-
-	at com.qa.crm.pages.ContactPage.newContactForm(ContactPage.java:43)
-	at com.qa.crm.testcases.ContactTest.newContactFormFillTest(ContactTest.java:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace648936749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace648936749'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td1[contains(text(),&apos;User: Pritesh Khambekar&apos;)]&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-6KKEUNJ&apos;, ip: &apos;172.20.10.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Pritesh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 05e0befa5e18ae15027e398ef4430336
+*** Element info: {Using=xpath, value=//td1[contains(text(),&apos;User: Pritesh Khambekar&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.qa.crm.pages.HomePage.verifyLoginUser(HomePage.java:28)
+	at com.qa.crm.testcases.HomepageTest.verifyLoginUserNameTest(HomepageTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,8 +192,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.qa.crm.testcases.ContactTest@cc285f4</td></tr>
+<td>90</td>
+<td>com.qa.crm.testcases.HomepageTest@d8355a8</td></tr>
 </table><p>
 </body>
 </html>

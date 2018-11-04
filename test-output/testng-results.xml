@@ -1,53 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="81896" started-at="2018-09-23T04:53:49Z" finished-at="2018-09-23T04:55:11Z">
+  <suite name="Default suite" duration-ms="139999" started-at="2018-09-23T08:46:51Z" finished-at="2018-09-23T08:49:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="81896" started-at="2018-09-23T04:53:49Z" finished-at="2018-09-23T04:55:11Z">
-      <class name="com.qa.crm.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="setUp" is-config="true" duration-ms="18553" started-at="2018-09-23T10:23:49Z" finished-at="2018-09-23T10:24:08Z">
+    <test name="Default test" duration-ms="139999" started-at="2018-09-23T08:46:51Z" finished-at="2018-09-23T08:49:11Z">
+      <class name="com.qa.crm.testcases.HomepageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.testcases.HomepageTest@d8355a8]" name="setUp" is-config="true" duration-ms="49311" started-at="2018-09-23T14:16:51Z" finished-at="2018-09-23T14:17:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmImageTest()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="crmImageTest" duration-ms="127" started-at="2018-09-23T10:24:08Z" finished-at="2018-09-23T10:24:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- crmImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="tearDown" is-config="true" duration-ms="755" started-at="2018-09-23T10:24:08Z" finished-at="2018-09-23T10:24:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="setUp" is-config="true" duration-ms="17215" started-at="2018-09-23T10:24:09Z" finished-at="2018-09-23T10:24:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="loginPageTest" duration-ms="23016" started-at="2018-09-23T10:24:26Z" finished-at="2018-09-23T10:24:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="tearDown" is-config="true" duration-ms="697" started-at="2018-09-23T10:24:49Z" finished-at="2018-09-23T10:24:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="setUp" is-config="true" duration-ms="19305" started-at="2018-09-23T10:24:50Z" finished-at="2018-09-23T10:25:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="titleTest()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="titleTest" duration-ms="27" started-at="2018-09-23T10:25:09Z" finished-at="2018-09-23T10:25:09Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="verifyLoginUserNameTest()[pri:0, instance:com.qa.crm.testcases.HomepageTest@d8355a8]" name="verifyLoginUserNameTest" duration-ms="90193" started-at="2018-09-23T14:17:40Z" finished-at="2018-09-23T14:19:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Title doesnt matched with actual expected [Free CRM software in the cloud powers sales and customer service] but found [#1 Free CRM software in the cloud for sales and service]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td1[contains(text(),'User: Pritesh Khambekar')]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'DESKTOP-6KKEUNJ', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Pritesh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 05e0befa5e18ae15027e398ef4430336
+*** Element info: {Using=xpath, value=//td1[contains(text(),'User: Pritesh Khambekar')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title doesnt matched with actual expected [Free CRM software in the cloud powers sales and customer service] but found [#1 Free CRM software in the cloud for sales and service]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at com.qa.crm.testcases.LoginPageTest.titleTest(LoginPageTest.java:33)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td1[contains(text(),'User: Pritesh Khambekar')]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'DESKTOP-6KKEUNJ', ip: '172.20.10.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Pritesh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 05e0befa5e18ae15027e398ef4430336
+*** Element info: {Using=xpath, value=//td1[contains(text(),'User: Pritesh Khambekar')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.qa.crm.pages.HomePage.verifyLoginUser(HomePage.java:28)
+	at com.qa.crm.testcases.HomepageTest.verifyLoginUserNameTest(HomepageTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,15 +86,15 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.testcases.LoginPageTest@14acaea5]" name="tearDown" is-config="true" duration-ms="697" started-at="2018-09-23T10:25:11Z" finished-at="2018-09-23T10:25:11Z">
+        </test-method> <!-- verifyLoginUserNameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.testcases.HomepageTest@d8355a8]" name="tearDown" is-config="true" duration-ms="53" started-at="2018-09-23T14:19:11Z" finished-at="2018-09-23T14:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.crm.testcases.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.qa.crm.testcases.HomepageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
