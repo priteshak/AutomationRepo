@@ -30,7 +30,7 @@ public class LoginPageTest extends TestBase{
 	@Test
 	public void titleTest() {
 		String expected = loginPage.loginTitle();
-		Assert.assertEquals(expected, "Free CRM software in the cloud powers sales and customer service","Title doesnt matched with actual");
+		Assert.assertEquals(expected, "#1 Free CRM software in the cloud for sales and service","Title doesnt matched with actual");
 	}
 	
 	@Test

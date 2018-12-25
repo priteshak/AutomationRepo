@@ -32,7 +32,7 @@ public class HomepageTest extends TestBase {
 	@Test
 	public void verifyLoginUserNameTest() {
 		String actualUserName = homePage.verifyLoginUser();
-		Assert.assertEquals(actualUserName, "Pritesh Khambekar", "wrong Username");
+		Assert.assertEquals(actualUserName, "  User: Pritesh Khambekar", "wrong Username");
 		
 	}
 	
