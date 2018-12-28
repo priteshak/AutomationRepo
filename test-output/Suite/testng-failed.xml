@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.qa.crm.ectentreport.ExtentReporterNG"/>
+    <listener class-name="com.qa.crm.retry.RetryFailedTC"/>
   </listeners>
   <test name="Test(failed)">
     <classes>
       <class name="com.qa.crm.testcases.LoginPageTest">
         <methods>
+          <include name="crmImageTest"/>
+          <include name="loginPageTest"/>
           <include name="titleTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
