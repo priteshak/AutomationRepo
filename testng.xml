@@ -4,19 +4,11 @@
 
 <listeners>
   <listener class-name="com.qa.crm.ectentreport.ExtentReporterNG" />
+  <listener class-name="com.qa.crm.retry.RetryFailedTC" />
   </listeners>
 
 
   <test thread-count="5" name="Test">
-  <parameter name="browser" value="firefox"/>
-  <classes>
-      <class name="com.qa.crm.testcases.LoginPageTest"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
   <classes>
       <class name="com.qa.crm.testcases.LoginPageTest"/>
     </classes>

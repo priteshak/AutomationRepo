@@ -11,6 +11,8 @@ import com.qa.crm.pages.LoginPage;
 
 
 
+
+
 public class LoginPageTest extends TestBase{
 	
 	LoginPage loginPage;
@@ -27,18 +29,18 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	@Test
+	@Test()
 	public void titleTest() {
 		String expected = loginPage.loginTitle();
 		Assert.assertEquals(expected, "#1 Free CRM software in the cloud for sales and service","Title doesnt matched with actual");
 	}
 	
-	@Test
+	@Test()
 	public void crmImageTest() {
 		loginPage.crmImage();
 	}
 	
-	@Test
+	@Test()
 	public void loginPageTest() throws InterruptedException {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
